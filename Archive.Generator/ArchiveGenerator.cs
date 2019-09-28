@@ -9,7 +9,7 @@ namespace Archive.Generator
     {
         public bool GenerateFile(string pathFile, string nameFile, ICollection<T> objects)
         {
-            // TODO Dar um generateString() de todos os objects
+            // TODO Dar um generateString() for all objects
 
             return false;
         }
