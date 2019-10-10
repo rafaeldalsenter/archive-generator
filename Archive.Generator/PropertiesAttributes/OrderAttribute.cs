@@ -2,7 +2,7 @@
 
 namespace Archive.Generator.PropertiesAttributes
 {
-    [AttributeUsage(AttributeTargets.Property)]
+    [AttributeUsage(AttributeTargets.Property, AllowMultiple = false)]
     public class OrderAttribute : Attribute
     {
         public int Order { get; private set; }
