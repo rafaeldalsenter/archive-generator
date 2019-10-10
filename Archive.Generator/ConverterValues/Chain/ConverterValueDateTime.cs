@@ -1,9 +1,8 @@
-﻿using Archive.Generator.PropertiesAttributes;
+﻿using Archive.Generator.Exceptions;
+using Archive.Generator.PropertiesAttributes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.CompilerServices;
-using Archive.Generator.Exceptions;
 
 namespace Archive.Generator.ConverterValues.Chain
 {

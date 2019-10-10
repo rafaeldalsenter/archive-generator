@@ -13,7 +13,11 @@ namespace Archive.Generator.ConverterValues.Chain
 
             if (!IsThisType(value)) return Next(value, attributes);
 
-            var format = attributes.FirstOrDefault(x => x is DateTimeFormatterAttribute) as DateTimeFormatterAttribute;
+            var decimalPlaces = attributes.FirstOrDefault(x => x is DecimalPlacesAttribute) as DecimalPlacesAttribute;
+
+            var size = attributes.FirstOrDefault(x => x is SizeAttribute) as SizeAttribute;
+
+            // TODO Fazer conversões do decimal conforme tamanho
 
             return "";
         }

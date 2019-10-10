@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Text;
-using Archive.Generator.ConverterValues.Chain;
+﻿using Archive.Generator.ConverterValues.Chain;
 using Archive.Generator.Exceptions;
 using Archive.Generator.PropertiesAttributes;
 using Archive.Generator.Tests.ConverterValues.Helper;
+using System;
 using Xunit;
 
 namespace Archive.Generator.Tests.ConverterValues
