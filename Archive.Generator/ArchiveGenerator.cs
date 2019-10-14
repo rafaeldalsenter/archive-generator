@@ -1,6 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 
 namespace Archive.Generator
 {
@@ -9,9 +9,9 @@ namespace Archive.Generator
     {
         public bool GenerateFile(string pathFile, string nameFile, ICollection<T> objects)
         {
-            // TODO Dar um generateString() for all objects
+            File.WriteAllLines($"{pathFile}\\{nameFile}", objects.Select(x => x.GenerateString()));
 
-            return false;
+            return true;
         }
     }
 }

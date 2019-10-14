@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29324.140
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Archive.Generator", "Archive.Generator\Archive.Generator.csproj", "{DE173A04-D4AC-4DA1-81DF-6C42F0D0A4BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Archive.Generator", "Archive.Generator\Archive.Generator.csproj", "{DE173A04-D4AC-4DA1-81DF-6C42F0D0A4BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Archive.Generator.Tests", "Archive.Generator.Tests\Archive.Generator.Tests.csproj", "{E5B73F0F-81BA-4CF7-B025-ADCC22F08467}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Archive.Generator.Tests", "Archive.Generator.Tests\Archive.Generator.Tests.csproj", "{E5B73F0F-81BA-4CF7-B025-ADCC22F08467}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Archive.Generator.Example", "Archive.Generator.Example\Archive.Generator.Example.csproj", "{B4EB78BB-E58C-45DF-A494-93C0701AC3AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{E5B73F0F-81BA-4CF7-B025-ADCC22F08467}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5B73F0F-81BA-4CF7-B025-ADCC22F08467}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5B73F0F-81BA-4CF7-B025-ADCC22F08467}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4EB78BB-E58C-45DF-A494-93C0701AC3AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4EB78BB-E58C-45DF-A494-93C0701AC3AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4EB78BB-E58C-45DF-A494-93C0701AC3AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4EB78BB-E58C-45DF-A494-93C0701AC3AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
