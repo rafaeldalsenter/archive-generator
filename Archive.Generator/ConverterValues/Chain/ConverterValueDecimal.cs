@@ -1,8 +1,8 @@
-﻿using System;
+﻿using Archive.Generator.Exceptions;
+using Archive.Generator.PropertiesAttributes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using Archive.Generator.Exceptions;
-using Archive.Generator.PropertiesAttributes;
 
 namespace Archive.Generator.ConverterValues.Chain
 {
@@ -14,9 +14,9 @@ namespace Archive.Generator.ConverterValues.Chain
 
             if (!IsThisType(value)) return Next(value, attributes);
 
-            var decimalAttribute = attributes.FirstOrDefault(x => x is DecimalAttribute) as DecimalAttribute;
+            var decimalAttribute = attributes?.FirstOrDefault(x => x is DecimalAttribute) as DecimalAttribute;
 
-            var size = attributes.FirstOrDefault(x => x is SizeAttribute) as SizeAttribute;
+            var size = attributes?.FirstOrDefault(x => x is SizeAttribute) as SizeAttribute;
 
             if (size is null) throw new IncorrectAttributeException($"Propriedade do tipo Decimal sem Atributo SizeAttribute informado.");
 
