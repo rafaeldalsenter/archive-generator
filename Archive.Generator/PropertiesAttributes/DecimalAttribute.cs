@@ -9,9 +9,9 @@ namespace Archive.Generator.PropertiesAttributes
 
         public bool AlignToLeft { get; private set; }
 
-        public string EmptySpaces { get; private set; }
+        public char EmptySpaces { get; private set; }
 
-        public DecimalAttribute(int places, string emptySpaces, bool alignToLeft = false)
+        public DecimalAttribute(int places, char emptySpaces, bool alignToLeft = false)
         {
             Places = places;
             AlignToLeft = alignToLeft;
