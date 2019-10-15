@@ -1,9 +1,9 @@
-﻿using Archive.Generator.PropertiesAttributes;
-using System;
+﻿using System;
+using Archive.Generator.PropertiesAttributes;
 
-namespace Archive.Generator.Tests.FakeObjects
+namespace Archive.Generator.Example.Objects
 {
-    public class Header
+    public class Header : BaseArchiveGenerator
     {
         [Order(1)]
         [Size(1)]
@@ -21,6 +21,7 @@ namespace Archive.Generator.Tests.FakeObjects
 
         [Order(4)]
         [Size(2)]
+        [Int(' ')]
         public int CodigoDeServico { get; set; }
 
         [Order(5)]
@@ -29,6 +30,7 @@ namespace Archive.Generator.Tests.FakeObjects
 
         [Order(6)]
         [Size(20)]
+        [Int(' ')]
         public int CodigoDaEmpresa { get; set; }
 
         [Order(7)]
@@ -37,6 +39,7 @@ namespace Archive.Generator.Tests.FakeObjects
 
         [Order(8)]
         [Size(3)]
+        [Int(' ')]
         public int NumeroDoBradescoNaCamaraDeCompensacao { get; set; }
 
         [Order(9)]
@@ -44,6 +47,7 @@ namespace Archive.Generator.Tests.FakeObjects
         public string NomeDoBancoPorExtenso { get; set; }
 
         [Order(10)]
+        [DateTimeFormatter("yyMMdd")]
         public DateTime DataDeGravacaoDoArquivo { get; set; }
 
         [Order(11)]
@@ -56,6 +60,7 @@ namespace Archive.Generator.Tests.FakeObjects
 
         [Order(13)]
         [Size(7)]
+        [Int(' ')]
         public int NumeroSequencialDaRemessa { get; set; }
 
         [Order(14)]
@@ -64,6 +69,7 @@ namespace Archive.Generator.Tests.FakeObjects
 
         [Order(15)]
         [Size(6)]
+        [Int(' ')]
         public int NumeroSequenciaDoRegistroDeUmEmUm { get; set; }
     }
 }

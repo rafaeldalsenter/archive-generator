@@ -24,5 +24,22 @@ namespace Archive.Generator.Example
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var archiveGenerator = new ArchiveGenerator<BaseArchiveGenerator>();
+
+            var generatorExample = new GeneratorExample();
+
+            var header = generatorExample.GerarHeader(TxtNomeDaEmpresa.Text);
+
+            archiveGenerator.GenerateFile(AppDomain.CurrentDomain.BaseDirectory, "CNAB400_example.txt",
+                new List<BaseArchiveGenerator>
+                {
+                    header
+                });
+
+            MessageBox.Show(this, "Arquivo gerado com sucesso!");
+        }
     }
 }
