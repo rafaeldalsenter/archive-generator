@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -40,6 +42,8 @@ namespace Archive.Generator.Example
                 });
 
             MessageBox.Show(this, "Arquivo gerado com sucesso!");
+
+            Process.Start("notepad.exe", $"{AppDomain.CurrentDomain.BaseDirectory}\\CNAB400_example.txt");
         }
     }
 }
