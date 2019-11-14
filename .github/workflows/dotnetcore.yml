@@ -1,4 +1,4 @@
-name: .NET Core
+name: Deploy
 
 on: [push]
 
@@ -9,12 +9,13 @@ jobs:
       matrix:
         os: [windows-2019]
     steps:
-    - uses: actions/checkout@v1
+    - name: Checkout
+      uses: actions/checkout@v1
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 3.0.100
-    - name: Build with dotnet
+    - name: Build
       run: dotnet build ./Archive.Generator.sln --configuration Release
-    - name: Test with dotnet
+    - name: Test
       run: dotnet test ./Archive.Generator.sln --configuration Release
