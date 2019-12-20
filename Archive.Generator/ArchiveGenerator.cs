@@ -11,6 +11,10 @@ namespace Archive.Generator
         {
             File.WriteAllLines($"{pathFile}\\{nameFile}", objects.Select(x => x.GenerateString()));
 
+
+
+
+
             return true;
         }
     }
