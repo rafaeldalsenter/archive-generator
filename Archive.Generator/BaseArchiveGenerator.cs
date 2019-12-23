@@ -14,5 +14,8 @@ namespace Archive.Generator
                 .OrderBy(x => ((OrderAttribute)x.GetCustomAttribute(typeof(OrderAttribute))).Order)
                 .Select(x => new ConverterValueChain().Get(x.GetValue(this, null), x.GetCustomAttributes(false)))
                 .ToList());
+                
+                
+          
     }
 }
