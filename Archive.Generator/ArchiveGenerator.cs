@@ -9,6 +9,7 @@ namespace Archive.Generator
     {
         public bool GenerateFile(string pathFile, string nameFile, ICollection<T> objects)
         {
+        var opa = 0;
             File.WriteAllLines($"{pathFile}\\{nameFile}", objects.Select(x => x.GenerateString()));
 
 
